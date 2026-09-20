@@ -1,0 +1,30 @@
+name: Update Meta-Cortex
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: update-meta-cortex
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Fetch latest release formula
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p Formula
+          gh release download --repo ai-ai-ai-ai-ai-ai-ai/meta-cortex --pattern meta-cortex.rb --dir Formula --clobber
+          ruby -c Formula/meta-cortex.rb
+          git config user.name 'Meta-Cortex releases'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Formula/meta-cortex.rb
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update Meta-Cortex to latest release'
+            git push
+          fi
