@@ -1,25 +1,25 @@
 class MetaCortex < Formula
   desc "Install the Meta-Cortex development framework in a project"
   homepage "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.2.0/meta-cortex-aarch64-apple-darwin.tar.xz"
-      sha256 "936c4b8ed87717b94dd6943c95426947702820a90e2dcd2b075a65aa923e382d"
+      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.3.0/meta-cortex-aarch64-apple-darwin.tar.xz"
+      sha256 "b66ba31df7db7f8a95e67bd84e88cd8cb4948693cee4878505d05e3314de9fc0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.2.0/meta-cortex-x86_64-apple-darwin.tar.xz"
-      sha256 "1c8ed0715234666bb111ef76727cde12020e097013436d44b9d7d03c6cf5e529"
+      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.3.0/meta-cortex-x86_64-apple-darwin.tar.xz"
+      sha256 "01e508b70469f74f3af1aaae58c1ab503c608aecf1b7cad733dd13bd5bc8e651"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.2.0/meta-cortex-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7f848a9f29a4ffa5888901f3b03aec096030f3692dfe396186e7253da4066895"
+      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.3.0/meta-cortex-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4eaa5a0270c840341ac3a2a203ccbaac78d3fd66e7b3cd96179d66fa59ff6d97"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.2.0/meta-cortex-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "64eac7c3baf9c7e468ca6e055663ca2499ce605c939ad3c44a0f756bc559eb43"
+      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.3.0/meta-cortex-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "02897b1ce401d7fff951e016e054f36c8a11f6d73c3a0660106eae7d300f2445"
     end
   end
   license "Apache-2.0"
