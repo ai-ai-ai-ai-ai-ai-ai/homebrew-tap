@@ -1,25 +1,25 @@
 class MetaCortex < Formula
   desc "Install the Meta-Cortex development framework in a project"
   homepage "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex"
-  version "0.12.1"
+  version "0.12.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.12.1/meta-cortex-aarch64-apple-darwin.tar.xz"
-      sha256 "b97059bfbe56e87e7ee444ef1250e23d12c70dccc857a5a7329abb979da6eafd"
+      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.12.2/meta-cortex-aarch64-apple-darwin.tar.xz"
+      sha256 "679e4ac0689f9058171f60253481556cc3f9b47de5ba8711830e460a2711ffc9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.12.1/meta-cortex-x86_64-apple-darwin.tar.xz"
-      sha256 "f6075a97d037c0c64cf1c256ba22dc70a9e5c1cf03c6f2b266c0710ef8778960"
+      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.12.2/meta-cortex-x86_64-apple-darwin.tar.xz"
+      sha256 "62bcd8d9d73812484940770d98a1ed748e86ebf4ec587f08b16b19ebacd8e81b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.12.1/meta-cortex-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "de48d6426e55081d0d76f22d046ece9d814dff383b0e3a38ee87dc8682e36ab4"
+      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.12.2/meta-cortex-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2be4b87b8a33adf7e341e70af6ab0d1992d200d0822244ea1d9a414f0ff0c5c9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.12.1/meta-cortex-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c63fbbbef370eabd4b4bd243cea1aeefded4730155b2991122376004daf42801"
+      url "https://github.com/ai-ai-ai-ai-ai-ai-ai/meta-cortex/releases/download/v0.12.2/meta-cortex-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "17f0840feebc6d7f33779990e21838ecfba315725eb519a1559b69c4ab02faea"
     end
   end
   license "Apache-2.0"
@@ -28,6 +28,7 @@ class MetaCortex < Formula
     "aarch64-apple-darwin": {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin": {},
+    "x86_64-pc-windows-gnu": {},
     "x86_64-unknown-linux-gnu": {}
   }
 
